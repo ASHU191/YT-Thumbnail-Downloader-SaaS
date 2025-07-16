@@ -153,7 +153,7 @@ export default function BannerDownloader({ params }: BannerDownloaderProps) {
           <CardContent>
             <div className="flex flex-col sm:flex-row gap-2">
               <Input
-                placeholder="Paste YouTube video URL here..."
+                placeholder={t.thumbnails.placeholder}
                 value={url}
                 onChange={(e) => setUrl(e.target.value)}
                 className="flex-1"
@@ -238,108 +238,54 @@ export default function BannerDownloader({ params }: BannerDownloaderProps) {
         <div className="max-w-4xl mx-auto">
           <Card>
             <CardHeader>
-              <CardTitle>About YouTube Channel Banner Downloader</CardTitle>
+              <CardTitle>{t.banner.about.title}</CardTitle>
             </CardHeader>
             <CardContent className="prose max-w-none">
-              <p className="mb-4">
-                A great banner can establish your channel's identity and engage viewers right away. With the YouTube
-                Channel Banner Downloader, you can quickly download banners from any YouTube channel. This simple tool
-                allows you to retrieve banners. No need to be tech-savvy, this tool is designed for everyone. Just copy
-                any YouTube URL, paste it into the tool, and within seconds, your banner is ready to download.
-              </p>
+              <p className="mb-4">{t.banner.about.description}</p>
 
-              <h3 className="text-xl font-semibold mb-3">How to Use the YouTube Channel Banner Downloader</h3>
+              <h3 className="text-xl font-semibold mb-3">{t.banner.about.howToUse.title}</h3>
               <ol className="list-decimal list-inside mb-6 space-y-2">
-                <li>Copy the YouTube Video URL</li>
-                <li>Paste the URL</li>
-                <li>Click Download</li>
+                {t.banner.about.howToUse.steps.map((step, index) => (
+                  <li key={index}>{step}</li>
+                ))}
               </ol>
 
-              <h3 className="text-xl font-semibold mb-3">What is a YouTube Channel Banner?</h3>
-              <p className="mb-6">
-                A YouTube channel banner, also known as channel art, is the large image displayed at the top of a
-                YouTube channel page. It helps convey your channel's brand, identity, and content type. A well-designed
-                banner grabs attention and sets the tone for your videos. It's the perfect place to showcase your logo,
-                images, and even some text.
-              </p>
+              <h3 className="text-xl font-semibold mb-3">{t.banner.about.whatIs.title}</h3>
+              <p className="mb-6">{t.banner.about.whatIs.description}</p>
 
-              <h3 className="text-xl font-semibold mb-3">Benefits of a YouTube Channel Banner</h3>
+              <h3 className="text-xl font-semibold mb-3">{t.banner.about.benefits.title}</h3>
               <ul className="list-disc list-inside mb-6 space-y-2">
-                <li>
-                  <strong>Brand Representation:</strong> Your banner is a reflection of your channel's identity. It
-                  should align with the tone, style, and content of your videos.
-                </li>
-                <li>
-                  <strong>First Impressions Matter:</strong> As the first thing viewers see, your banner plays a key
-                  role in attracting potential subscribers.
-                </li>
-                <li>
-                  <strong>Building Trust:</strong> Consistency in design helps create a professional look, reinforcing
-                  your brand image across all platforms.
-                </li>
+                {t.banner.about.benefits.list.map((item, index) => (
+                  <li key={index}>
+                    <strong>{item.title}</strong> {item.description}
+                  </li>
+                ))}
               </ul>
 
-              <h3 className="text-xl font-semibold mb-3">Recommended Banner Size for YouTube</h3>
-              <p className="mb-4">
-                For the best display on all devices, the ideal size for a YouTube channel banner is 2560 x 1440 pixels.
-                This ensures that your banner looks crisp on desktops, laptops, tablets, and mobile devices. Always aim
-                for high-resolution images and ensure that key elements are within the safe area (1546 x 423 pixels) to
-                avoid cropping on different screen sizes.
-              </p>
+              <h3 className="text-xl font-semibold mb-3">{t.banner.about.recommendedSize.title}</h3>
+              <p className="mb-4">{t.banner.about.recommendedSize.description}</p>
 
-              <h3 className="text-xl font-semibold mb-3">Available Banner Sizes</h3>
+              <h3 className="text-xl font-semibold mb-3">{t.banner.about.availableSizes.title}</h3>
               <ul className="list-disc list-inside mb-6 space-y-1">
-                <li>2560 x 1440 pixels – Full HD</li>
-                <li>1920 x 1080 pixels – Ideal for desktop screens</li>
-                <li>1280 x 720 pixels – Perfect for tablets and smartphones</li>
-                <li>Various Other Sizes – For mobile devices and other screen types</li>
+                {t.banner.about.availableSizes.list.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
               </ul>
 
-              <h3 className="text-xl font-semibold mb-3">Download YouTube Channel Banners</h3>
-              <p className="mb-6">
-                Want to download a YouTube channel banner? With our YouTube Channel Banner Downloader, it's simple.
-                Paste the URL of any YouTube video, and our tool will retrieve the banner in different sizes, ready for
-                you to save and use.
-              </p>
+              <h3 className="text-xl font-semibold mb-3">{t.banner.about.download.title}</h3>
+              <p className="mb-6">{t.banner.about.download.description}</p>
 
-              <h3 className="text-xl font-semibold mb-3">Downloading YouTube Channel Banners – Legal Considerations</h3>
-              <p className="mb-6">
-                While downloading YouTube banners for inspiration or personal use is generally acceptable, please
-                respect copyright and intellectual property rights. Avoid using downloaded banners for commercial
-                purposes unless you have obtained the necessary permissions from the original creators.
-              </p>
+              <h3 className="text-xl font-semibold mb-3">{t.banner.about.legal.title}</h3>
+              <p className="mb-6">{t.banner.about.legal.description}</p>
 
-              <h3 className="text-xl font-semibold mb-3">Frequently Asked Questions (FAQ)</h3>
+              <h3 className="text-xl font-semibold mb-3">{t.banner.about.faq.title}</h3>
               <div className="space-y-4">
-                <div>
-                  <h4 className="font-semibold">What is a YouTube Channel Banner?</h4>
-                  <p>
-                    A YouTube channel banner is a large, customizable image displayed at the top of your channel's page.
-                    It serves as a visual representation of your brand.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="font-semibold">How do I download a YouTube channel banner?</h4>
-                  <p>
-                    To download a banner, simply paste the video URL into our tool, click "Download," and save the
-                    banner image to your device.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="font-semibold">Can I download banners from any video?</h4>
-                  <p>Yes, our tool allows you to download banners from any publicly available YouTube video.</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold">What is the recommended size for a YouTube channel banner?</h4>
-                  <p>The ideal size is 2560 x 1440 pixels, with a file size under 6 MB for faster loading times.</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold">Is it legal to use downloaded banners?</h4>
-                  <p>
-                    Downloading banners for personal use is fine, but you must respect copyright laws when using them
-                    commercially.
-                  </p>
-                </div>
+                {t.banner.about.faq.questions.map((q, index) => (
+                  <div key={index}>
+                    <h4 className="font-semibold">{q.question}</h4>
+                    <p>{q.answer}</p>
+                  </div>
+                ))}
               </div>
             </CardContent>
           </Card>
