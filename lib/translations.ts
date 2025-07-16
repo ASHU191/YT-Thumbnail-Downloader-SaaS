@@ -98,7 +98,7 @@ export const translations = {
       },
     },
     footer: {
-      copyright: "© 2024 YT Tools. All rights reserved.",
+      copyright: "© 2025 YouTube Thumbnail Downloader. Developed by Muhammad Arsalan.",
       disclaimer: "This tool is not affiliated with YouTube. YouTube is a trademark of Google Inc.",
     },
   },
