@@ -146,7 +146,7 @@ export default function ProfilePicDownloader({ params }: ProfilePicDownloaderPro
           <CardContent>
             <div className="flex flex-col sm:flex-row gap-2">
               <Input
-                placeholder="Paste YouTube video URL here..."
+                placeholder={t.thumbnails.placeholder}
                 value={url}
                 onChange={(e) => setUrl(e.target.value)}
                 className="flex-1"
@@ -230,84 +230,47 @@ export default function ProfilePicDownloader({ params }: ProfilePicDownloaderPro
         <div className="max-w-4xl mx-auto">
           <Card>
             <CardHeader>
-              <CardTitle>About YouTube Profile Picture Downloader</CardTitle>
+              <CardTitle>{t.profilePic.about.title}</CardTitle>
             </CardHeader>
             <CardContent className="prose max-w-none">
-              <p className="mb-4">
-                Looking to download YouTube profile pictures (also known as channel logos or avatars)? Our YouTube
-                Profile Picture aka PFP Downloader allows you to view and download high-resolution profile images from
-                any YouTube channel.
-              </p>
+              <p className="mb-4">{t.profilePic.about.description}</p>
 
-              <h3 className="text-xl font-semibold mb-3">How to Use the YouTube Profile Picture Downloader:</h3>
+              <h3 className="text-xl font-semibold mb-3">{t.profilePic.about.howToUse}</h3>
               <ul className="list-disc list-inside mb-6 space-y-2">
-                <li>Step 1: Paste the YouTube video URL.</li>
-                <li>Step 2: Select your desired resolution from the available options.</li>
-                <li>Step 3: Click "Download".</li>
+                {t.profilePic.about.steps.map((step, index) => (
+                  <li key={index}>{step}</li>
+                ))}
               </ul>
 
-              <h3 className="text-xl font-semibold mb-3">Available Profile Picture Sizes:</h3>
+              <h3 className="text-xl font-semibold mb-3">{t.profilePic.about.sizes.title}</h3>
               <ul className="list-disc list-inside mb-6 space-y-1">
-                <li>1920x1920 (Ultra High Quality)</li>
-                <li>1280x1280 (High Quality)</li>
-                <li>800x800 (Recommended by YouTube)</li>
-                <li>400x400 (Standard)</li>
-                <li>240x240 (Small)</li>
-                <li>176x176 (Mobile)</li>
-                <li>88x88 (Tiny)</li>
+                {t.profilePic.about.sizes.list.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
               </ul>
 
-              <h3 className="text-xl font-semibold mb-3">Why Use Our YouTube Profile Picture Downloader?</h3>
+              <h3 className="text-xl font-semibold mb-3">{t.profilePic.about.whyUse.title}</h3>
 
-              <h4 className="text-lg font-semibold mb-2">Multiple Size Options:</h4>
-              <p className="mb-4">
-                Get the exact size you need for your project, from tiny 88x88 icons to high-resolution 1920x1920 images.
-              </p>
+              <h4 className="text-lg font-semibold mb-2">{t.profilePic.about.whyUse.multipleSizes.title}</h4>
+              <p className="mb-4">{t.profilePic.about.whyUse.multipleSizes.description}</p>
 
-              <h4 className="text-lg font-semibold mb-2">High-Resolution Image Quality:</h4>
-              <p className="mb-4">
-                Download the profile pictures in the same resolution as they appear on YouTube. Perfect for use in
-                websites, presentations, or personal projects.
-              </p>
+              <h4 className="text-lg font-semibold mb-2">{t.profilePic.about.whyUse.highQuality.title}</h4>
+              <p className="mb-4">{t.profilePic.about.whyUse.highQuality.description}</p>
 
-              <h4 className="text-lg font-semibold mb-2">Engagement Boost:</h4>
-              <p className="mb-6">
-                A high-quality, memorable profile picture can enhance your online identity and attract more subscribers
-                to your YouTube channel.
-              </p>
+              <h4 className="text-lg font-semibold mb-2">{t.profilePic.about.whyUse.engagement.title}</h4>
+              <p className="mb-6">{t.profilePic.about.whyUse.engagement.description}</p>
 
-              <h3 className="text-xl font-semibold mb-3">Legal and Privacy Considerations:</h3>
-              <p className="mb-6">
-                Our tool respects privacy and adheres to YouTube's Terms of Service. It is important to download and use
-                profile pictures in compliance with copyright laws. You are solely responsible for how you use the
-                images, ensuring they are used ethically and legally.
-              </p>
+              <h3 className="text-xl font-semibold mb-3">{t.profilePic.about.legal.title}</h3>
+              <p className="mb-6">{t.profilePic.about.legal.description}</p>
 
-              <h3 className="text-xl font-semibold mb-3">Frequently Asked Questions (FAQ):</h3>
+              <h3 className="text-xl font-semibold mb-3">{t.profilePic.about.faq.title}</h3>
               <div className="space-y-4">
-                <div>
-                  <h4 className="font-semibold">Is this tool free to use?</h4>
-                  <p>Yes! The YouTube Profile Picture Downloader is completely free to use.</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold">Can I download images anonymously?</h4>
-                  <p>You don't need to provide any personal information.</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold">What image resolution can I download?</h4>
-                  <p>
-                    The tool offers various resolutions, including HD quality (1280x1280) and standard resolutions like
-                    800x800 and 400x400.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="font-semibold">Is there a limit on how many images I can download?</h4>
-                  <p>No! You can download as many YouTube profile pictures as you need.</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold">Is the tool compatible with all devices?</h4>
-                  <p>Yes, it works perfectly on Windows, Mac, Android, and iOS devices with an updated browser.</p>
-                </div>
+                {t.profilePic.about.faq.questions.map((q, index) => (
+                  <div key={index}>
+                    <h4 className="font-semibold">{q.question}</h4>
+                    <p>{q.answer}</p>
+                  </div>
+                ))}
               </div>
             </CardContent>
           </Card>
