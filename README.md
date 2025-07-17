@@ -27,10 +27,10 @@ This SaaS-style app lets you extract thumbnails just by pasting a video link. It
 
 ---
 
-## 🌐 Demo
+## 🌐 Preview
 
-![YT Thumbnail Downloader Demo](https://yt-thumbnail-downloader-saas.vercel.app/preview.png)  
-> _Paste → Fetch → Save — that's it._
+![YT Thumbnail Downloader Preview](/yt1.png)  
+
 
 ---
 
@@ -38,10 +38,10 @@ This SaaS-style app lets you extract thumbnails just by pasting a video link. It
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/ASHU191/YT-Thumbnail-Downloader-SAAS.git
+git clone https://github.com/ASHU191/YT-Thumbnail-Downloader-SaaS.git
 
 # 2. Navigate into the folder
-cd YT-Thumbnail-Downloader-SAAS
+cd YT-Thumbnail-Downloader-SaaS
 
 # 3. Install dependencies
 npm install
@@ -53,7 +53,7 @@ npm run dev
 
 ---
 
-YT-Thumbnail-Downloader-SAAS
+YT-Thumbnail-Downloader-SaaS
 ├── public/             → Static assets (favicon, preview)
 ├── src/
 │   ├── app/            → Next.js App Router pages
