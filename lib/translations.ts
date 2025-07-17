@@ -256,7 +256,7 @@ export const translations = {
       },
     },
     footer: {
-      copyright: "© 2024 YT Tools. All rights reserved.",
+      copyright: "© 2025 YT Tools. All rights reserved.",
       disclaimer: "This tool is not affiliated with YouTube. YouTube is a trademark of Google Inc.",
     },
   },
@@ -514,7 +514,7 @@ export const translations = {
       },
     },
     footer: {
-      copyright: "© 2024 YT Tools. Todos los derechos reservados.",
+      copyright: "© 2025 YT Tools. Todos los derechos reservados.",
       disclaimer: "Esta herramienta no está afiliada con YouTube. YouTube es una marca registrada de Google Inc.",
     },
   },
@@ -771,7 +771,7 @@ export const translations = {
       },
     },
     footer: {
-      copyright: "© 2024 YT Tools. Tous droits réservés.",
+      copyright: "© 2025 YT Tools. Tous droits réservés.",
       disclaimer: "Cet outil n'est pas affilié avec YouTube. YouTube est une marque de Google Inc.",
     },
   },
@@ -1027,7 +1027,7 @@ export const translations = {
       },
     },
     footer: {
-      copyright: "© 2024 YT Tools. Alle Rechte vorbehalten.",
+      copyright: "© 2025 YT Tools. Alle Rechte vorbehalten.",
       disclaimer: "Dieses Tool ist nicht mit YouTube verbunden. YouTube ist eine Marke von Google Inc.",
     },
   },
@@ -1283,7 +1283,7 @@ export const translations = {
       },
     },
     footer: {
-      copyright: "© 2024 YT Tools. Todos os direitos reservados.",
+      copyright: "© 2025 YT Tools. Todos os direitos reservados.",
       disclaimer: "Esta ferramenta não é afiliada ao YouTube. YouTube é uma marca registrada do Google Inc.",
     },
   },
