@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Muhammad Arsalan Aftab',
+  title: 'YT Media Downloader',
   description: 'Created with Love',
   generator: 'Muhammad Arsalan Aftab',
 }
