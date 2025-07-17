@@ -246,8 +246,8 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
               <div className="flex items-center space-x-3 mb-4">
-               <img src="/thumnail-downloader.png?height=40&width=40" alt="YT Tools Logo" className="w-22 h-14 rounded-lg" /
-                <span className="text-xl font-bold">YT Tools</span>
+                <img src="/thumnail-downloader.png?height=40&width=40" alt="YT Tools Logo" className="w-22 h-14 rounded-lg" />
+                <span className="text-xl font-bold"></span>
               </div>
               <p className="text-gray-400 mb-4 max-w-md">{t.home.footer.description}</p>
             </div>
