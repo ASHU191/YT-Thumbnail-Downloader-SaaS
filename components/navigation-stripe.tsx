@@ -39,8 +39,8 @@ export default function NavigationStripe({ currentLang, currentTool, onLanguageC
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-3">
-          <img src="/placeholder.svg?height=32&width=32" alt="YT Tools Logo" className="w-8 h-8 rounded-lg" />
-          <span className="text-xl font-bold hidden sm:block">YT Tools</span>
+          <img src="/thumnail-downloader.png?height=40&width=40" alt="YT Tools Logo" className="w-22 h-14 rounded-lg" />
+          <span className="text-xl font-bold hidden sm:block"></span>
         </Link>
 
         {/* Desktop Navigation */}
