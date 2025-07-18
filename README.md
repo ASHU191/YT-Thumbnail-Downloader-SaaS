@@ -5,7 +5,7 @@ Built with ⚡ Next.js, 💡 TypeScript, and 🎨 Tailwind CSS — styled using 
 
 Live App 👉 [yt-thumbnail-downloader-saas.vercel.app](https://yt-thumbnail-downloader-saas.vercel.app)
 
----
+---   
  
 ## 🚀 Why This App?
 
