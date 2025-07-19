@@ -24,7 +24,7 @@ This SaaS-style app lets you extract thumbnails just by pasting a video link. It
 | **shadcn/ui**  | Elegant pre-built UI components        |
 | **React**      | Core frontend rendering                |
 | **Vercel**     | Hosting & CI/CD                        |
-
+       
 ---
 
 ## 🌐 Preview
