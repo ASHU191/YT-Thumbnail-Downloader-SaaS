@@ -3,7 +3,7 @@
 Download YouTube video thumbnails in HD — instantly, beautifully, and reliably.  
 Built with ⚡ Next.js, 💡 TypeScript, and 🎨 Tailwind CSS — styled using the modern `shadcn/ui` component library.
 
-Live App 👉 [yt-thumbnail-downloader-saas.vercel.app](https://yt-thumbnail-downloader-saas.vercel.app)
+Live App 👉 [yt-thumbnail-downloader-saas.vercel.app](https://yt-thumbnail-downloader-saas.vercel.app)  
 
 ---   
                     
