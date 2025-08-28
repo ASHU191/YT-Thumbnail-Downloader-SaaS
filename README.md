@@ -9,7 +9,7 @@ Live App 👉 [yt-thumbnail-downloader-saas.vercel.app](https://yt-thumbnail-dow
                              
 ## 🚀 Why This App?      
 
-Whether you're a content creator, marketer, or designer — fetching high-quality YouTube thumbnails shouldn't be a struggle.   
+Whether you're a content creator, marketer, or designer — fetching high-quality YouTube thumbnails shouldn't be a struggle.     
 This SaaS-style app lets you extract thumbnails just by pasting a video link. It's fast, clean, and mobile-ready.   
 
 ---
