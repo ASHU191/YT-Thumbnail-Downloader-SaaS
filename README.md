@@ -16,7 +16,7 @@ This SaaS-style app lets you extract thumbnails just by pasting a video link. It
 
 ## 🧠 Tech Stack
 
-| Technology     | Purpose                                |
+| Technology     | Purpose                                |   
 |----------------|----------------------------------------|
 | **Next.js**    | App framework (SSR + routing)          |
 | **TypeScript** | Type safety + better DX                |
