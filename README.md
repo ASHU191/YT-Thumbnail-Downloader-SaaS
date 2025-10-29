@@ -14,7 +14,7 @@ This SaaS-style app lets you extract thumbnails just by pasting a video link. It
 
 ---  
 
-## 🧠 Tech Stack
+## 🧠 Tech Stack   
 
 | Technology     | Purpose                                |   
 |----------------|----------------------------------------|
